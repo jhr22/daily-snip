@@ -33,8 +33,5 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// snip := snippets[time.Now().YearDay()%len(snippets)]
-	// fmt.Println(snip)
-
 	runTUI(snippets)
 }
