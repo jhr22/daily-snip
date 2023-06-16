@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"time"
 
 	"github.com/jhr22/daily-snip/internal/snips"
 )
@@ -34,6 +33,8 @@ func main() {
 		log.Fatal(err)
 	}
 
-	snip := snippets[time.Now().YearDay()%len(snippets)]
-	fmt.Println(snip)
+	// snip := snippets[time.Now().YearDay()%len(snippets)]
+	// fmt.Println(snip)
+
+	runTUI(snippets)
 }
